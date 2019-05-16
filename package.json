@@ -42,6 +42,7 @@
     "storybook": "start-storybook -p 9009 -c stories",
     "build-docs": "cd stories && yarn install && cd .. && build-storybook -c stories -o docs",
     "deploy-docs": "gh-pages -d docs",
+    "prepare": "yarn build",
     "preversion": "yarn build",
     "postpublish": "yarn build-docs && yarn deploy-docs"
   }
